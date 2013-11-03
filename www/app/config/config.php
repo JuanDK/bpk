@@ -14,7 +14,16 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/boligportalkiller/bpk/www/';
+function url_host(){
+	if(isset($_SERVER['HTTPS'])){
+		$protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+	}
+	else{
+		$protocol = 'http';
+	}
+	return $protocol . "://" . $_SERVER['HTTP_HOST'];
+}
+$config['base_url']	= url_host().'/boligportalkiller/bpk/www/';
 
 /*
 |--------------------------------------------------------------------------
