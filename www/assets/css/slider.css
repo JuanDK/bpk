@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+ /* New in version 1.7+ */
+ #slider1 {
+  width: 720px;
+  height: 405px;
+  list-style: none;
+  
+ }
+ 
+.ui-tabs-panel {
+  margin-left: -25px;
+  margin-top: -10px;
+ }
+  
+ .anythingSlider-metallic .thumbNav a {
+  background-image: url();
+  height: 60px;
+  width: 60px;
+  border: #000 3px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-indent: 0;
+ }
+ .anythingSlider-metallic .thumbNav a span {
+  visibility: visible; /* span changed to visibility hidden in v1.7.20 */
+ }
+ /* border around link (image) to show current panel */
+ .anythingSlider-metallic .thumbNav a:hover,
+ .anythingSlider-metallic .thumbNav a.cur {
+  border-color: #fff;
+ }
+ /* reposition the start/stop button */
+ .anythingSlider-metallic .start-stop {
+  margin-top: 15px;
+ }
+ 
+ 
+ 
+ 
+ 

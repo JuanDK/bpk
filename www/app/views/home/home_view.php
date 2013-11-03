@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" >
 	<title>rent your shit!</title>
 	
 	<link rel="stylesheet" href="<?php echo base_url('assets') ?>/themes/jquery-ui.min.css" />
-  	<script src="<?php echo base_url('assets') ?>/jquery-1.9.1.js"></script>
+  	<script src="<?php echo base_url('assets') ?>/js/jquery-1.9.1.min.js"></script>
   	<script src="<?php echo base_url('assets') ?>/ui/jquery-ui.js"></script>
-  	<script>
-	$(function() {
-		$( "#accordion" ).accordion();
-	});
-	</script>
+
+	<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/master.css" />
+	
 </head>
 <body>
 
-<div id="" class="ui-widget-content ui-corner-all">
-	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+	<h1>Welcome to CodeIgniter!</h1>
+	
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+	
+	
+			
+			<?php $this->load->view("home/slider") ?>
+			
+		
+	<script>
+		    $(function(){
+		            $("#home-details").addClass("ui-widget-content");
+		            $("#home-details").addClass("ui-corner-all");
+		        });
+	</script>		
+			<div id="home-details">
+				<div>details</div>
+				<ul>
+					<li>price:333DKK</li>
+					<li>deposit:2100DKK</li>
+				</ul>
+				<div> description
+					text
+					text
+					exttddddd
+				</div>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+			</div>
+	
+	
+		
 	</div>
 
+	<p></p>
+	
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-</div>
+	
 
 </body>
 </html>

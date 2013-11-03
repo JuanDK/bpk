@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+#screen {
+	width: 1366px;
+	height:768px;
+	border: 1px solid #D0D0D0;
+	margin: 0 0 0 0;
+	overflow: visible;
+}
+
+#body {
+	margin-left: auto;
+    margin-right: auto;
+	width: 1090px;
+}
+.footer {
+	float:left;
+	width: 900px;
+}
+
+ #home-tabs {
+  width: 766px;
+  height: 466px;
+  float:left;
+  margin-right: 5px;
+ }
+ 
+ #home-details{
+ 	width: 300px;
+	float:left;
+
+ }
+ 
