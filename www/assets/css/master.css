@@ -1,4 +1,13 @@
 @CHARSET "UTF-8";
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+table {
+	font-size: 1em;
+}
+
 #screen {
 	width: 1366px;
 	height:768px;
@@ -11,7 +20,17 @@
 	margin-left: auto;
     margin-right: auto;
 	width: 1090px;
+	
 }
+
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
 .footer {
 	float:left;
 	width: 900px;

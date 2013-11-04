@@ -9,33 +9,41 @@
   	<script src="<?php echo base_url('assets') ?>/ui/jquery-ui.js"></script>
 
 	<link rel="stylesheet" href="<?php echo base_url('assets') ?>/css/master.css" />
-
-	<script>
-	$(function() {
-		$( "#menubar" ).buttonset();
-	});
-	</script>
+	
 </head>
 <body>
 
-	
+
 	<div id="body">
+	<h1>Welcome to CodeIgniter!</h1>
 	
-	<div id="toolbar" class="ui-widget-header ui-corner-tl ui-corner-tr">
+
+	
+	
+			
+			<?php $this->load->view("property/slider") ?>
+			
 		
-		<form style="margin-top: 1em;">
-			<div id="menubar">
-				<?php echo anchor('home','Home')?>
-				<?php echo anchor('/','Search')?>
-				<?php echo anchor('home/property','Property')?>
-				<?php echo anchor('user/join','User')?>
-				
+	<script>
+		    $(function(){
+		            $("#home-details").addClass("ui-widget-content");
+		            $("#home-details").addClass("ui-corner-all");
+		        });
+	</script>		
+			<div id="home-details">
+				<div>details</div>
+				<ul>
+					<li>price:333DKK</li>
+					<li>deposit:2100DKK</li>
+				</ul>
+				<div> description
+					text
+					text
+					exttddddd
+				</div>
+
 			</div>
-		</form>
-	</div>
 	
-
-
 	
 		
 	</div>

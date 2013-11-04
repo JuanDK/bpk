@@ -29,6 +29,12 @@ class Home extends CI_Controller {
 		$this->load->view('home/home_view');
 	
 	}
+	
+	public function property()
+	{
+		$this->load->view('property/prop_view');
+	
+	}
 }
 
 /* End of file welcome.php */
